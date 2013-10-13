@@ -1,6 +1,6 @@
 // gasbox.js
 
-var controls_enabled = false;
+var controls_enabled = true;
 
 var camera, scene, renderer, controls;
 
@@ -69,6 +69,12 @@ function init() {
 	// boxGeometry.computeVertexNormals();
 
     box = new THREE.Mesh(boxGeometry, boxMaterial);
+
+    var sphere = new THREE.SphereGeometry(10, 16, 8);
+ 	var p = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({color: 0x0000ff}));
+ 	p.position.y = 30;
+ 	p.position.z = 30;
+ 	scene.add(p);
 
     scene.add(box);
 
