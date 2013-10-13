@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #f1f1f1;
+	font-family: Helvetica;
+	font-size: 10px;
+}
+
+canvas {
+	position: relative;
+	z-index: 0;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.controls {
+	position: absolute;
+	z-index: 1;
+	top: 2em;
+	right: 2em;
+	width: 30em;
+	height: 30em;
+	background: #ddd;
+	border: 1px solid black;
+	padding: 1em;
+}
+
+label {
+	font-size: 1.2em;
+}
+
+input {
+}
